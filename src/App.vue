@@ -3,7 +3,7 @@ import { ref, onMounted } from 'vue';
 import { RouterLink, RouterView } from 'vue-router';
 import axios from 'axios';
 
-const API = process.env.API_URL || "http://localhost:3000/";
+const API = "https://tapestry-api.vercel.app/" // "http://localhost:3000/"; // TODO: USE ENV VARIABLE
 const message = ref("");
 
 const getServerResponse = async () => {
